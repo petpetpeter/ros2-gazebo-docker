@@ -14,8 +14,9 @@ services:
     #   resources:
     #     reservations:
     #       devices:
-    #          - capabilities: [gpu]
-    #            count: all
+    #         - driver: nvidia
+    #           count: 1
+    #           capabilities: [gpu]
 
     environment:
       # Set a fancy prompt (See ~/.bashrc in the container)
@@ -35,5 +36,8 @@ services:
       - ./docker/ros2/.gazebo/:/home/dockeruser/.gazebo
 
       # WSLg settings
-      - /mnt/wslg:/mnt/wslg
+      # - /mnt/wslg:/mnt/wslg
       - /tmp/.X11-unix:/tmp/.X11-unix
+    devices:
+       - /dev/dri:/dev/dri
+
