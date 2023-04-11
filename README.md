@@ -1,6 +1,9 @@
 # Docker-ROS2
 
-ros2 humble branch
+This fork setup
+1. ubuntu 22.04
+2. ros2-humble image
+3. nvidia-gpu
 
 ## What is this?
 
