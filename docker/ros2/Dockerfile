@@ -3,7 +3,7 @@
 
 # https://github.com/osrf/docker_images/blob/master/README.md#ros---1
 # https://github.com/osrf/docker_images/blob/master/ros/galactic/ubuntu/focal/desktop/Dockerfile
-FROM osrf/ros:galactic-desktop
+FROM osrf/ros:humble-desktop
 
 ARG user_id=1000
 ARG ros_ws=/home/dockeruser/dev_ws
@@ -17,6 +17,7 @@ RUN apt-get update && apt-get install -y \
     nano \
     less \
     xterm
+    
 #    && rm -rf /var/lib/apt/lists/*
 
 # Switch to a non-root user.
