@@ -1,6 +1,6 @@
 # Docker-ROS2
 
-ro2 humble branch
+ros2 humble branch
 
 ## What is this?
 
