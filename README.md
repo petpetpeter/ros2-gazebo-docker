@@ -22,9 +22,9 @@ This fork setup
 ```bash
 git clone {this-repository}
 cd {this-repository}
-docker-compose build
-docker-compose up -d
-docker-compose exec ros2 bash
+docker compose build
+docker compose up -d
+docker compose exec ros2 bash
 ```
 
 ### ROS2
